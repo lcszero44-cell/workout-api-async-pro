@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Workout API Async Pro - High-Concurrency CrossFit Engine">
+  <defs>
+    <!-- Deep Cyber-Dark Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="48%" stop-color="#0b132b" />
+      <stop offset="100%" stop-color="#060918" />
+    </linearGradient>
+
+    <!-- Ambient Radial Glows -->
+    <radialGradient id="cyanGlow" cx="78%" cy="48%" r="38%">
+      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0.28" />
+      <stop offset="50%" stop-color="#00bbf9" stop-opacity="0.09" />
+      <stop offset="100%" stop-color="#00bbf9" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="violetGlow" cx="22%" cy="22%" r="42%">
+      <stop offset="0%" stop-color="#9b5de5" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#3a0ca3" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#3a0ca3" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#e0fbfc" />
+      <stop offset="100%" stop-color="#00f5d4" />
+    </linearGradient>
+
+    <!-- Accent Bar Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5d4" />
+      <stop offset="50%" stop-color="#00bbf9" />
+      <stop offset="100%" stop-color="#9b5de5" />
+    </linearGradient>
+
+    <!-- Isometric Cube Face Gradients (Layer 1 - Top / FastAPI) -->
+    <linearGradient id="topFace1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#00bbf9" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="leftFace1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0088a9" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#063959" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="rightFace1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00c4d4" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#09527a" stop-opacity="0.94" />
+    </linearGradient>
+
+    <!-- Isometric Cube Face Gradients (Layer 2 - Middle / Async Engine) -->
+    <linearGradient id="topFace2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5e60ce" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#7209b7" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="leftFace2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a0ca3" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#1b065e" stop-opacity="0.96" />
+    </linearGradient>
+    <linearGradient id="rightFace2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#560bad" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#240046" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Isometric Cube Face Gradients (Layer 3 - Bottom / Dual-DB) -->
+    <linearGradient id="topFace3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d3557" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0f2038" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="leftFace3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111d35" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#070d1a" stop-opacity="0.98" />
+    </linearGradient>
+    <linearGradient id="rightFace3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#162947" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#091326" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Neon Glow Filters -->
+    <filter id="neonGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.55" />
+    </filter>
+
+    <!-- Clip for Rounded Container -->
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="1200" height="360" rx="18" ry="18" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <!-- Base Background -->
+    <rect width="1200" height="360" fill="url(#bgGrad)" />
+    <rect width="1200" height="360" fill="url(#cyanGlow)" />
+    <rect width="1200" height="360" fill="url(#violetGlow)" />
+
+    <!-- Subtle Isometric Perspective Grid -->
+    <g stroke="#00f5d4" stroke-opacity="0.06" stroke-width="1">
+      <path d="M0 240 L1200 240 M0 275 L1200 275 M0 315 L1200 315 M0 355 L1200 355" />
+      <path d="M120 360 L340 190 M260 360 L450 190 M400 360 L560 190 M540 360 L670 190 M680 360 L780 190 M820 360 L890 190 M960 360 L1000 190 M1100 360 L1110 190" />
+      <path d="M880 360 L660 190 M1020 360 L770 190 M1160 360 L880 190 M740 360 L550 190 M600 360 L440 190" />
+    </g>
+
+    <!-- Cyber Frame Border & Corner HUD Brackets -->
+    <rect x="1.5" y="1.5" width="1197" height="357" rx="17" fill="none" stroke="url(#accentGrad)" stroke-opacity="0.45" stroke-width="1.5" />
+    <g stroke="#00f5d4" stroke-width="2.5" fill="none" stroke-linecap="square">
+      <path d="M22 46 L22 22 L46 22" />
+      <path d="M1154 22 L1178 22 L1178 46" />
+      <path d="M22 314 L22 338 L46 338" />
+      <path d="M1154 338 L1178 338 L1178 314" />
+    </g>
+
+    <!-- Left Section: Typography & System Telemetry -->
+    <g transform="translate(64, 62)">
+      <!-- Eyebrow Tag -->
+      <rect x="0" y="0" width="388" height="28" rx="14" fill="#00f5d4" fill-opacity="0.09" stroke="#00f5d4" stroke-opacity="0.45" stroke-width="1" />
+      <circle cx="16" cy="14" r="4.5" fill="#00f5d4" filter="url(#neonGlow)" />
+      <text x="30" y="18.5" font-family="'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#9ef0e6">
+        SANTANDER 2025 PYTHON BACK-END // DIO
+      </text>
+
+      <!-- Main Hero Title -->
+      <text x="0" y="92" font-family="'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif" font-size="46" font-weight="900" letter-spacing="1.2" fill="url(#titleGrad)" filter="url(#softShadow)">
+        WORKOUT API ASYNC PRO
+      </text>
+
+      <!-- Accent Divider -->
+      <rect x="0" y="108" width="540" height="3.5" rx="2" fill="url(#accentGrad)" />
+
+      <!-- Subtitle -->
+      <text x="0" y="142" font-family="'Consolas', 'JetBrains Mono', 'Fira Code', monospace" font-size="17" font-weight="700" letter-spacing="2.4" fill="#00f5d4">
+        // HIGH-CONCURRENCY CROSSFIT ENGINE
+      </text>
+
+      <!-- Architecture Value Proposition -->
+      <text x="0" y="176" font-family="'Segoe UI', 'Inter', system-ui, sans-serif" font-size="14.5" fill="#b8c5d6">
+        Clean Architecture · Dual-Database Zero-Config (SQLite Async / PostgreSQL)
+      </text>
+      <text x="0" y="198" font-family="'Segoe UI', 'Inter', system-ui, sans-serif" font-size="14.5" fill="#8ea3bf">
+        Auto-Seed Inteligente · Observability Headers · Paginação Oficial · Integrity HTTP 303
+      </text>
+
+      <!-- Tech Pills Row -->
+      <g transform="translate(0, 224)" font-family="'Consolas', 'JetBrains Mono', monospace" font-size="11.5" font-weight="700">
+        <rect x="0" y="0" width="94" height="28" rx="6" fill="#0d1b36" stroke="#00f5d4" stroke-opacity="0.55" />
+        <text x="47" y="18" text-anchor="middle" fill="#00f5d4">FASTAPI</text>
+
+        <rect x="104" y="0" width="154" height="28" rx="6" fill="#0d1b36" stroke="#00bbf9" stroke-opacity="0.55" />
+        <text x="181" y="18" text-anchor="middle" fill="#64dfdf">SQLALCHEMY 2.0</text>
+
+        <rect x="268" y="0" width="122" height="28" rx="6" fill="#0d1b36" stroke="#9b5de5" stroke-opacity="0.6" />
+        <text x="329" y="18" text-anchor="middle" fill="#d0a2f7">PYDANTIC V2</text>
+
+        <rect x="400" y="0" width="124" height="28" rx="6" fill="#0d1b36" stroke="#f15bb5" stroke-opacity="0.55" />
+        <text x="462" y="18" text-anchor="middle" fill="#ff8fab">ASYNC PYTEST</text>
+      </g>
+    </g>
+
+    <!-- Right Section: 3D Isometric Layered Architecture Engine -->
+    <g transform="translate(955, 195)" filter="url(#softShadow)">
+      <!-- Glowing Base Platform Ring -->
+      <ellipse cx="0" cy="108" rx="145" ry="42" fill="#00f5d4" fill-opacity="0.06" stroke="#00f5d4" stroke-opacity="0.3" stroke-width="1.2" stroke-dasharray="6 5" />
+
+      <!-- LAYER 3 (Bottom): Dual-Database Core (SQLite / PostgreSQL) -->
+      <g transform="translate(0, 44)">
+        <!-- Top Face -->
+        <polygon points="0,-54 112,-10 0,34 -112,-10" fill="url(#topFace3)" stroke="#00bbf9" stroke-opacity="0.7" stroke-width="1.2" />
+        <!-- Left Face -->
+        <polygon points="-112,-10 0,34 0,68 -112,24" fill="url(#leftFace3)" stroke="#00bbf9" stroke-opacity="0.45" stroke-width="1" />
+        <!-- Right Face -->
+        <polygon points="112,-10 0,34 0,68 112,24" fill="url(#rightFace3)" stroke="#00bbf9" stroke-opacity="0.45" stroke-width="1" />
+        <!-- Data LED dots on Right Face -->
+        <circle cx="30" cy="40" r="2.8" fill="#00f5d4" />
+        <circle cx="44" cy="34.5" r="2.8" fill="#00bbf9" />
+        <circle cx="58" cy="29" r="2.8" fill="#9b5de5" />
+        <text x="-56" y="34" font-family="'Consolas', monospace" font-size="9.5" font-weight="700" fill="#7dd3fc" transform="skewY(21)">DUAL-DB ASYNC</text>
+      </g>
+
+      <!-- Vertical Energy Conduits (Layer 3 -> Layer 2) -->
+      <g stroke="#00f5d4" stroke-width="1.8" stroke-dasharray="4 4" opacity="0.75">
+        <line x1="-54" y1="22" x2="-54" y2="-16" />
+        <line x1="54" y1="22" x2="54" y2="-16" />
+        <line x1="0" y1="42" x2="0" y2="-2" />
+      </g>
+
+      <!-- LAYER 2 (Middle): Clean Service & Integrity Engine -->
+      <g transform="translate(0, -14)">
+        <polygon points="0,-50 100,-10 0,30 -100,-10" fill="url(#topFace2)" stroke="#c77dff" stroke-opacity="0.85" stroke-width="1.3" />
+        <polygon points="-100,-10 0,30 0,60 -100,20" fill="url(#leftFace2)" stroke="#9b5de5" stroke-opacity="0.55" stroke-width="1" />
+        <polygon points="100,-10 0,30 0,60 100,20" fill="url(#rightFace2)" stroke="#c77dff" stroke-opacity="0.55" stroke-width="1" />
+        <text x="-52" y="29" font-family="'Consolas', monospace" font-size="9.5" font-weight="700" fill="#e0aaff" transform="skewY(21)">ASYNC SERVICES</text>
+        <text x="15" y="45" font-family="'Consolas', monospace" font-size="9.5" font-weight="700" fill="#00f5d4" transform="skewY(-21)">HTTP 303 / PAGE</text>
+      </g>
+
+      <!-- Vertical Energy Conduits (Layer 2 -> Layer 1) -->
+      <g stroke="#00f5d4" stroke-width="1.8" stroke-dasharray="4 4" opacity="0.85">
+        <line x1="-44" y1="-34" x2="-44" y2="-68" />
+        <line x1="44" y1="-34" x2="44" y2="-68" />
+      </g>
+
+      <!-- LAYER 1 (Top): FastAPI High-Concurrency Core -->
+      <g transform="translate(0, -72)">
+        <polygon points="0,-46 88,-10 0,26 -88,-10" fill="url(#topFace1)" stroke="#ffffff" stroke-opacity="0.8" stroke-width="1.4" />
+        <polygon points="-88,-10 0,26 0,52 -88,16" fill="url(#leftFace1)" stroke="#00f5d4" stroke-opacity="0.7" stroke-width="1" />
+        <polygon points="88,-10 0,26 0,52 88,16" fill="url(#rightFace1)" stroke="#00f5d4" stroke-opacity="0.7" stroke-width="1" />
+
+        <!-- Stylized Isometric Barbell + Lightning Core on Top Face -->
+        <g transform="translate(0, -10)" filter="url(#neonGlow)">
+          <!-- Barbell Shaft -->
+          <line x1="-38" y1="-12" x2="38" y2="12" stroke="#050814" stroke-width="5" stroke-linecap="round" />
+          <line x1="-38" y1="-12" x2="38" y2="12" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+          <!-- Left Weight Plates -->
+          <ellipse cx="-30" cy="-9.5" rx="7" ry="14" transform="rotate(18 -30 -9.5)" fill="#050814" stroke="#00f5d4" stroke-width="2" />
+          <ellipse cx="-39" cy="-12.5" rx="5.5" ry="11" transform="rotate(18 -39 -12.5)" fill="#0b132b" stroke="#ffffff" stroke-width="1.5" />
+          <!-- Right Weight Plates -->
+          <ellipse cx="30" cy="9.5" rx="7" ry="14" transform="rotate(18 30 9.5)" fill="#050814" stroke="#00f5d4" stroke-width="2" />
+          <ellipse cx="39" cy="12.5" rx="5.5" ry="11" transform="rotate(18 39 12.5)" fill="#0b132b" stroke="#ffffff" stroke-width="1.5" />
+          <!-- Center Async Bolt -->
+          <polygon points="2,-14 -8,2 0,2 -3,14 9,-2 1,-2" fill="#050814" stroke="#ffffff" stroke-width="1.2" />
+        </g>
+
+        <text x="-44" y="25" font-family="'Consolas', monospace" font-size="9.5" font-weight="700" fill="#e0fbfc" transform="skewY(21)">FASTAPI ASGI</text>
+        <text x="16" y="40" font-family="'Consolas', monospace" font-size="9.5" font-weight="700" fill="#ffffff" transform="skewY(-21)">X-REQ-ID</text>
+      </g>
+
+      <!-- Floating Telemetry Nodes -->
+      <g font-family="'Consolas', monospace" font-size="10.5" font-weight="700">
+        <rect x="-176" y="-128" width="92" height="24" rx="5" fill="#071226" stroke="#00f5d4" stroke-opacity="0.7" />
+        <text x="-130" y="-112" text-anchor="middle" fill="#00f5d4">ASYNC I/O</text>
+        <line x1="-84" y1="-116" x2="-58" y2="-98" stroke="#00f5d4" stroke-opacity="0.5" stroke-width="1.2" />
+
+        <rect x="86" y="-134" width="98" height="24" rx="5" fill="#071226" stroke="#9b5de5" stroke-opacity="0.8" />
+        <text x="135" y="-118" text-anchor="middle" fill="#d0a2f7">AUTO-SEED</text>
+        <line x1="86" y1="-122" x2="54" y2="-100" stroke="#9b5de5" stroke-opacity="0.6" stroke-width="1.2" />
+      </g>
+    </g>
+
+    <!-- Bottom Right Status Indicator -->
+    <g transform="translate(970, 332)" font-family="'Consolas', monospace" font-size="10.5" fill="#64748b">
+      <circle cx="0" cy="-3.5" r="3.5" fill="#00f5d4" />
+      <text x="10" y="0" fill="#94a3b8">STATUS: PRODUCTION-READY · v2.0.0</text>
+    </g>
+  </g>
+</svg>
