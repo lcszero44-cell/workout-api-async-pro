@@ -1,0 +1,21 @@
+[project]
+name = "workout-api-async-pro"
+version = "2.0.0"
+description = "High-Concurrency Async CrossFit Competition API — FastAPI, SQLAlchemy 2.0 Async, Pydantic v2 & Clean Architecture"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["B008"]
